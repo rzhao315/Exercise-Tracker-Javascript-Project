@@ -1,0 +1,375 @@
+
+/*  ===== MOBILE styles (reside at the top and are inherited by all devices) ===== */
+/*  ===== See tablet, desktop, and print @media queries at the bottom. */
+
+
+/*   ----- Imports  -----  */
+.App {
+    text-align: center;
+    background-color: rgb(198, 223, 238);
+  }
+  
+  .App-logo {
+    height: 10;
+    pointer-events: none;
+    font-size: 200pt;  
+    color: rgb(75, 93, 104);
+  
+  
+  /* hosted services like Google Fonts  */
+  @import url(//fonts.googleapis.com/css?family=Verdana);
+  
+  
+  /*
+  @import '../node_modules/modern-normalize/modern-normalize.css';
+      /* npm install modern-normalize 
+          Resets elements for browser consistancy.  
+          http://nicolasgallagher.com/about-normalize-css/ 
+      */
+  /*   ----- Variables  -----  */
+  /* :root {
+  --custom-color-name: rgb(133, 52, 38) ;
+  --custom-embellishment-name: darkblue;
+  } */ 
+  
+  /*  ----- Viewport ----- elements inherited by all remaining elements ----- */
+  
+  
+  }
+  
+  body {      /* Can alternatively define in html {} or :root {} */
+  color: rgb(55, 148, 185);
+  background-color:rgb(75, 93, 104);
+  font-size: 1.5em;
+  font-family: Verdana;
+  padding: 4px 25px 5px 20px;
+  margin: 1em;
+  text-decoration: dotted;
+  }
+  
+  /* ----- Anchors ----- Text links */
+  a {}
+  a:link {}
+  a:hover {}
+  a:active {
+    color: blue
+  }
+  a:visited {
+    color: rgb(67, 41, 184);
+  }
+  
+  /*  ----- Navigation ----- Override text links for navigation only.  */
+  nav {
+    text-align: center;
+    background-color:rgb(184, 214, 226);
+    color: rgb(24, 46, 134);
+    border:15pt;
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 85px;
+    padding: 4px 25px 15px 20px;
+    margin: 10pt;
+    border-style: solid;
+    border-color: rgb(105, 122, 221)
+  
+  }
+  
+  nav a {
+    background-color:rgb(184, 214, 226);
+    color: rgb(202, 147, 147);
+    border:15pt;
+    font-size: 2.5em;
+    font-weight: bold;
+    line-height: 85px;
+    margin: 20pt;
+    padding: 4px 25px 15px 20px;
+    text-decoration: none;
+    vertical-align: middle;
+  }
+  nav a:hover {
+    background-color: rgb(24, 46, 134);
+    color:rgb(184, 214, 226);
+    }
+  
+  
+  /*  ----- Page layout blocks -----  */
+  header {
+    border: 10pt;
+    text-align: center;
+    font-size: 30pt;
+    color: rgb(54, 62, 65);
+    background-color:rgb(184, 214, 226);
+    margin: 85pt;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+  }
+  main {
+    background-color:rgb(200, 222, 236); ;
+    color: rgb(6, 46, 116);
+    border: 40pc;
+    margin: 80pt;
+    padding: 10pt;
+    border: 15pt;
+    font-size: 1.1em;
+    font-weight: normal;
+  
+    }
+  
+  footer {
+    text-align: bottom;
+    font-size: 23px;
+    color: rgb(54, 62, 65);
+    background-color:rgb(184, 214, 226);
+    margin: 85pt;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 10pt;
+  }
+  
+  section {}
+  article {}
+  #topic1 {}
+  #topic2 {}
+  #gallery1 {}
+  #gallery2 {}
+  div {
+  }
+  aside {}
+  
+  /*  -----  Typography  ----- */
+  p {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    color:rgb(105, 122, 221)
+  }
+  br {}
+  ol, ul, dl {}
+  li {}
+  dt {}
+  dd {}
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 2em;
+    text-align: center;
+    color:rgb(105, 122, 221)
+  } /* Define consistant font family.*/
+  h1 {
+    
+  }
+  h2 {
+    
+  }
+  h3 {}
+  h4 {}
+  h5 {}
+  h6 {}
+  
+  abbr {}
+  acronym {}
+  address {}
+  blockquote {}
+  q {}
+  cite {}
+  em {}
+  hr {}
+  mark {}
+  s {}
+  span {}
+  strong {}
+  sub {}
+  sup {}
+  time {}
+  
+  /*  ----- Coding or instructional typography ----- */
+  pre {}
+  code {}
+  kbd {}
+  samp {}
+  var {}
+  del {} 
+  ins {}
+  
+  /*  ----- Table ----- */
+  table {
+    border-collapse: collapse;
+    border-style: solid;
+    width: 100%;
+    vertical-align: center;
+    margin: 10px;
+    padding: 4px 25px 15px 20px;
+  }
+  
+  caption {
+    vertical-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 1.em;
+    margin: 10pt;
+    color:rgb(91, 90, 93);
+    padding: 1em;
+    border-style: solid;
+    border-color: gray
+  }
+  thead {
+    text-align: left;
+    border-bottom:  1px solid gray;
+    border-style: solid
+  }
+  tbody {
+    border-radius: 7px;
+    border:15pt;
+    font-size: 2em;
+    line-height: 85px;
+    margin: 20pt;
+    padding: 4px 25px 15px 20px;
+    text-decoration: none;
+    vertical-align: center;
+    text-align: left;
+    font-size:100%;
+    border-bottom:  1px solid gray;
+  }
+  tfoot {}
+  tr {
+    vertical-align: center;
+    font-size: 1.2em;
+    width: 24%;
+    border-style: solid;
+    border-color: gray;
+  }
+  tr:nth-child(even) {}
+  th {
+    vertical-align: center;
+    text-align: left;
+    font-size: 21pt;
+    width: 22%;
+    border-bottom:  1px solid gray;
+    font-weight: bold;
+  }
+  td {
+    vertical-align: center;
+  
+  }
+  td:nth-child(1) {}
+  colgroup {}
+  data {}
+  datalist {}
+  
+  
+  /*  ----- Form ----- */
+  form {
+    margin: 20pt;
+    
+  }
+  fieldset {
+    font-size: 25pt;
+    size: 30pt;
+    font-weight: bold;
+  }
+  legend {
+    font-size: 40pt;
+    size: 35pt;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  
+  label {  
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding:25pt;
+    color:rgb(6, 52, 116);
+    }
+  button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding:15px 100px 15px 100px;
+    
+    align-items: center;
+    background-color: rgb(214, 214, 199);
+    color:rgb(105, 122, 221);
+    font-size: 20pt;
+    size: 40pt;
+    margin: 1%;
+  }
+  input {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 15px;
+    font-size: 20pt;
+    size: 40px;
+    color: navy
+  }
+  button:hover {
+    background-color:rgb(105, 122, 221);
+    color: bisque;
+  }
+  output {}
+  meter {}
+  progress {}
+  select {}
+  optgroup {}
+  option {}
+  textarea {}
+  
+  /* ----- Media ----- */
+  figure {}
+  figcaption {}
+  img {}
+  svg {}
+  picture {}
+  source {}
+  iframe {}
+  video {}
+  audio {}
+  embed {}
+  object {}
+  
+  
+  /*  ----- Classes for alignment, positioning, widths, grids, embellishments, and animation -----  */
+  .floatright {}
+  .floatleft {}
+  .center-middle {}
+  
+  .ten {}
+  .twenty {}
+  .thirty {}
+  .forty {}
+  .fifty {}
+  .sixty {}
+  .seventy {}
+  .eighty {}
+  
+  .radius {}
+  .circle {}
+  .boxshadow {}
+  .tshadow {} 
+  .gradient {}
+  .shape {}
+  
+  .App-logo {
+  height: 10;
+  pointer-events: none;
+  font-size: 200pt;  
+  color: rgb(105, 122, 221);
+  }
+  
+  .Order-qty {
+    font-size: 1.1em;
+    vertical-align: center;
+    text-align: left;
+    margin: 1pt;
+  }
+  
+  .qty-button:hover {
+    background-color: rgb(105, 122, 221);
+    color: bisque;
+  }
+  @keyframes App-logo {}
+  
+  /*   ===== TABLET  media query overrides mobile styles ===== */
+  @media all and (min-width: 600px) {}
+  
+  /*   ===== DESKTOP  media query overrides mobile and tablet styles ===== */
+  @media all and (min-width: 1080px) {}
+  
+  /*   ===== PRINT  media query overrides previous styles =====  */
+  @media print {}
+            
